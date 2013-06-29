@@ -1,6 +1,8 @@
-= Internet Enabled ROV =
+Internet Enabled ROV
+====================
 
-=== Theory ===
+Theory
+------
 
 The ROV will be connected to the surface by cat5 ethernet cable, carrying data and PoE at 12-48 volts depending on what power supply I find.
 
@@ -10,7 +12,8 @@ The motherboard contains a passive ethernet hub, connections to the power conver
 
 When the motorboard's ip address is visited in a web browser, it responds with a simple html page showing instructions and a live updating camera feed. Pressing the WASD, QE and up/down arrow keys will send GET requests to the onboard webserver that will control the motor drivers. There is also a checkbox that will control an led array for increased lighting.
 
-=== ROV Design ===
+ROV Design
+----------
 
 The ROV will have four motors, one each for movement in the X, Y and Z axises and one for rotation of the robot.
 
@@ -18,7 +21,8 @@ All electronics will be encased in a waterproofed pvc pipe that will form the bo
 
 Motors will be standard brushed dc, placed inside pill bottles filled with paraffin and marine jelly for waterproofing. Propellers will be whatever I can get my hands on.
 
-=== Embedded Webserver ===
+Embedded Webserver
+------------------
 
 Code for the embedded server is based off examples from jcw's [ethercard project](https://github.com/jcw/ethercard).
 
